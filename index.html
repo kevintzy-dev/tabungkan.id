@@ -6,28 +6,17 @@
     <title>TABUNGKAN - Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-      import { getFirestore } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
-      const firebaseConfig = {
-        apiKey: "AIzaSyD4JrtHYu2L59A9L_BnqrhUvnfTT5NMGr8",
-        authDomain: "tabungkanid.firebaseapp.com",
-        projectId: "tabungkanid",
-        storageBucket: "tabungkanid.firebasestorage.app",
-        messagingSenderId: "913262687752",
-        appId: "1:913262687752:web:fc5ec2eec42747ba9bc3bd",
-        measurementId: "G-ZXD2GWBR22"
-      };
-      const app = initializeApp(firebaseConfig);
-      window.db = getFirestore(app);
-    </script>
 </head>
 <body>
     <div style="width: 100%; max-width: 420px; display: flex; flex-direction: column; align-items: stretch;">
         
         <div style="text-align: left; margin-bottom: 24px; padding: 0 4px;">
-            <h1 style="color: #ffffff; font-size: 32px; font-weight: 800; margin-bottom: 12px; letter-spacing: 0.5px;">Tabungkan</h1>
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #00e5ff, #00ffcc); border-radius: 14px; display: flex; justify-content: center; align-items: center; box-shadow: 0 8px 20px rgba(0, 229, 255, 0.3);">
+                    <i class="fas fa-wallet" style="color: #111317; font-size: 22px;"></i>
+                </div>
+                <h1 style="color: #ffffff; font-size: 28px; font-weight: 800; letter-spacing: 0.5px; margin: 0;">Tabungkan</h1>
+            </div>
             <p style="color: #a0a5b1; font-size: 13px; line-height: 1.6;">Website Tabungkan adalah platform digital untuk merencanakan, mencatat, dan memantau target keuangan secara praktis dan transparan. Platform ini membantu pengguna mengontrol anggaran, melihat grafik pertumbuhan dana, serta membangun kebiasaan finansial yang disiplin secara online.</p>
         </div>
 
