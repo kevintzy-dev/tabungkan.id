@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUNGKAN - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-header">
+            <div class="logo">
+                <i class="fas fa-wallet"></i> TABUNGKAN
+            </div>
+            <button id="logoutBtn" class="logout-btn-small"><i class="fas fa-sign-out-alt"></i> KELUAR</button>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-card balance-card">
+                <h3>TOTAL SALDO</h3>
+                <h2 id="totalBalance">Rp 0</h2>
+            </div>
+            <div class="summary-card income-card">
+                <h3><i class="fas fa-arrow-down"></i> PEMASUKAN</h3>
+                <p id="totalIncome">Rp 0</p>
+            </div>
+            <div class="summary-card expense-card">
+                <h3><i class="fas fa-arrow-up"></i> PENGELUARAN</h3>
+                <p id="totalExpense">Rp 0</p>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="dashboard-card form-section">
+                <h3 class="section-title">TAMBAH TRANSAKSI</h3>
+                <form id="transactionForm" class="login-form">
+                    <div class="input-group">
+                        <label for="trans-name">KATEGORI TRANSAKSI</label>
+                        <div class="input-field">
+                            <i class="fas fa-tag"></i>
+                            <select id="trans-name" required></select>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="trans-amount">JUMLAH (Rp)</label>
+                        <div class="input-field">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <input type="number" id="trans-amount" placeholder="Masukkan nominal..." required min="1">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>JENIS TRANSAKSI</label>
+                        <div class="radio-group">
+                            <label class="radio-btn income-radio">
+                                <input type="radio" name="trans-type" value="income" checked>
+                                <span>PEMASUKAN</span>
+                            </label>
+                            <label class="radio-btn expense-radio">
+                                <input type="radio" name="trans-type" value="expense">
+                                <span>PENGELUARAN</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="login-btn">SIMPAN TRANSAKSI</button>
+                </form>
+            </div>
+
+            <div class="dashboard-card history-section">
+                <h3 class="section-title">RIWAYAT TERAKHIR</h3>
+                <div class="transaction-list" id="transactionList">
+                    <p class="empty-state">Belum ada transaksi dicatat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

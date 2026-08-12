@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUNGKAN - Daftar Akun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>BUAT AKUN</h2>
+            <p>Bergabunglah dengan TABUNGKAN sekarang.</p>
+        </div>
+        
+        <form id="registerForm" class="login-form">
+            <div class="input-group">
+                <label for="reg-fullname">NAMA LENGKAP</label>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="reg-fullname" placeholder="Masukkan nama lengkap..." required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-email">EMAIL</label>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="reg-email" placeholder="Masukkan email..." required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="reg-password">KATA SANDI BARU</label>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="reg-password" class="password-input" placeholder="Buat kata sandi..." required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                <p class="password-hint">*Wajib minimal 8 karakter, kombinasi huruf & angka.</p>
+            </div>
+
+            <button type="submit" class="login-btn">DAFTAR SEKARANG</button>
+
+            <div class="register-link">
+                <p>Sudah punya akun? <a href="index.html">Masuk di sini</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="customPopup" class="popup-overlay">
+        <div class="popup-box">
+            <i class="fas fa-exclamation-circle"></i>
+            <h3>Peringatan!</h3>
+            <p>Pesan peringatan di sini...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
